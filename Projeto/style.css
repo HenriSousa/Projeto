@@ -1,0 +1,966 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    hr.first{
+        border: 1px solid grey;
+        width: 50%;
+        margin-top: -0.7rem;
+        margin-bottom: 1.5rem;
+    }
+    hr.second{
+        border: 1px solid grey;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* in row Justify-content work at axis X and in column at axis Y*/
+        /* justify-content: center; */
+        /* in row align-items work at axis Y and in column at axis X*/
+        /* align-items: center; */
+        /* justify-content: space-between; */
+    }
+    .header{
+        display: flex;
+        height: 2rem;
+        width: 100%;
+        line-height: 2rem;        
+        flex-grow: 0;
+        justify-content: space-between;
+        background-color: black;
+    }
+    .itemHeader1{
+        height: 80%;
+        width: 3.5%;
+        margin-top: 0.5rem;
+        margin-left: 0.3rem;
+        background-image: url(/IMG/header/name-header.png);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+    }
+    .itemHeader2{
+        display: flex;
+        height: 100%;
+        width: 5%;
+        align-items: center;
+    }
+    .itemHeader2-1{
+        height: 70%;
+        width: 33%;
+        background-image: url(/IMG/header/button-minimizer.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemHeader2-2{
+        height: 70%;
+        width: 33%;
+        background-image: url(/IMG/header/button-size.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemHeader2-3{
+        height: 70%;
+        width: 33%;
+        background-image: url(/IMG/header/button-closed.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .leftBar{
+        display: flex;
+        height: 57.2rem;
+        width: 4rem;
+        flex-grow: 0;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3px;
+        background-color: black;
+    }
+    .itemLeftBar1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        margin-top: 8px;
+        margin-bottom: 2rem;
+        background-image: url(/IMG/leftBar/icone-discord.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemLeftBar2{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/leftBar/lampada.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemLeftBar3{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/leftBar/mulher-com-planta.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemLeftBar4{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/leftBar/luzes.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemLeftBar5{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/leftBar/raia.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemLeftBar6{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/leftBar/dunas.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemLeftBar7{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/leftBar/lupa.png);
+        background-repeat: no-repeat;
+        background-size: 90% 50%;
+        background-position: center;
+    }
+    .itemLeftBar8{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/leftBar/adicao.png);
+        background-repeat: no-repeat;
+        background-size: 50% 50%;
+        background-position: center;    
+    }
+    .middleBar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 57.2rem;
+        width: 20rem;
+        flex-grow: 0;
+        background-color: #363636;
+    }
+    .itemMiddleBar1{
+        width: 100%;
+        height: 8rem;
+        background-image: url(/IMG/middleBar/sunset.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .itemMiddleBar1-1{
+        color: white;
+        text-align: center;
+        font-size: x-large;
+    }
+    .itemMiddleBar2{
+        width: 100%;
+        height: 43rem;
+        color: white;
+    }
+    .itemMiddleBar2-1{
+        width: 100%;
+        height: 5rem;
+        margin-top: 0.7rem;
+        list-style-type: none;
+    }
+    .itemMiddleBar2-1 li{
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    .itemMiddleBar2-2{
+        width: 100%;
+        height: 5rem;
+        margin-top: 0.7rem;
+        list-style-type: none;
+    }
+    .itemMiddleBar2-2 li{
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    .itemMiddleBar2-3{
+        width: 100%;
+        height: 8rem;
+        margin-top: 0.7rem;
+        list-style-type: none;
+    }
+    .itemMiddleBar2-3 li{
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    .itemMiddleBar2-4{
+        width: 100%;
+        height: 22rem;
+        margin-top: 1rem;
+    }
+    .itemMiddleBar2-4-1{
+        list-style-type: none;
+        margin-left: 2.7rem;
+        list-style-image: url(/IMG/middleBar/voiceChat/wifi.png);
+    }
+    .itemMiddleBar2-4-2{
+        list-style-type: none;
+        margin-left: 5rem;
+    }
+    .ana{
+        list-style-image: url(/IMG/middleBar/voiceChat/ana.png);
+    }
+    .maria{
+        list-style-image: url(/IMG/middleBar/voiceChat/maria.png);
+    }
+    .joaquim{
+        list-style-image: url(/IMG/middleBar/voiceChat/joaquim.png);
+    }
+    .alex{
+        list-style-image: url(/IMG/middleBar/voiceChat/alex.png);
+    }
+    .alba{
+        list-style-image: url(/IMG/middleBar/voiceChat/alba.png);
+    }
+    .itemMiddleBar3{
+        width: 100%;
+        height: 5.6rem;
+    }
+    .itemMiddleBar3-1{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: space-between;
+        background-color: #1C1C1C;
+    }
+    .settings{
+        list-style-type: none;
+        list-style-image: url(/IMG/middleBar/info-connection/signal.png);
+        margin-left: 1.5rem;
+        color: green;
+    }
+    .itemMiddleBar3-1-1{
+        width: 10%;
+        height: 100%;
+        margin-left: 4.8rem;
+        background-image: url(/IMG/middleBar/info-connection/button-pause.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50% 50%;
+    }
+    .itemMiddleBar3-1-2{
+        width: 10%;
+        height: 100%;
+        background-image: url(/IMG/middleBar/info-connection/button-disconnected.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50% 50%;
+    }
+    .itemMiddleBar3-2{
+        background-color: #1C1C1C;
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: space-around;
+    }
+    .itemMiddleBar3-2-1{
+        background-color: blueviolet;
+        width: 10%;
+        height: 100%;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxThree/ana.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80% 80%;
+    }
+    .itemMiddleBar3-2-2{
+        width: 55%;
+        height: 100%; 
+    }
+    .itemMiddleBar3-2-2 li{
+        list-style-type: none;
+        margin-left: 0.5rem;
+        margin-top: 0.1rem;
+        color: white;
+    }
+    .itemMiddleBar3-2-3{
+        width: 10%;
+        height: 100%;
+        background-image: url(/IMG/middleBar/info-connection/button-mute.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50% 50%;  
+    }
+    .itemMiddleBar3-2-4{
+        width: 10%;
+        height: 100%;
+        background-image: url(/IMG/middleBar/info-connection/button-headset.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50% 50%;
+    }
+    .itemMiddleBar3-2-5{
+        width: 10%;
+        height: 100%;
+        background-image: url(/IMG/middleBar/info-connection/button-setting.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50% 50%;
+    }
+    .box{
+        display: flex;
+        background-color: black;
+        height: 57.2rem;
+        width: 93rem;
+        flex-grow: 1;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .boxOne{
+        display: flex;
+        height: 2rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .itemBoxOne1, .itemBoxOne2{
+        width: 10%;
+        height: 100%;
+    }
+    .itemBoxOne1 li{
+        list-style-type: none;
+        list-style-image: url(/IMG/middleBar/voiceChat/wifi.png);
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+        color: white;
+    }
+    .itemBoxOne2 li{
+        list-style-type: none;
+        list-style-image: url(/IMG/middleBar/voiceChat/users.png);
+        margin-top: 0.5rem;
+        margin-left: 8rem;
+        color: white;
+    }
+    .boxTwo{
+        display: flex;
+        height: 6.1rem;
+        width: 100%;
+        flex-direction: column;
+    }
+    .itemBoxTwo1{
+        width: 25%;
+        height: 40%;
+        margin-top: 1rem;
+    }
+    .itemBoxTwo1 li{
+        list-style-type: none;
+        font-size: x-large;
+        margin-top: 2rem;
+        color: white;
+    }
+    .itemBoxTwo2{
+        width: 10%;
+        height: 100%;
+    }
+    .itemBoxTwo2 li{        
+        list-style-type: none;
+        font-size: small;
+        margin-left: 2rem;        
+        margin-top: 1rem;
+        color: white;
+        list-style-image: url(/IMG/middleBar/voiceChat/users.png);
+    }
+    .boxThree{
+        display: flex;
+        height: 12rem;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .itemBoxThree1{
+        display: flex;
+        background-color: blueviolet;
+        width: 25%;
+        height: 100%;
+        border-radius: 5%;
+        margin-right: 2px;
+        margin-left: 2px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .itemBoxThree1-1{
+        border: solid white;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 100%;
+        margin-bottom: 1rem;
+        background-image: url(/IMG/box/boxThree/ana.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxThree1-2{
+        display: flex;
+        height: 2rem;
+        width: 90%;
+        margin-bottom: 4px;
+        justify-content: space-between;
+    }
+    .itemBoxThree1-2-1{
+        padding: 10px 10px;
+        background-color: gray;
+        border-radius: 15%;
+    }
+    .itemBoxThree1-2-1 li{
+        height: 100%;
+        color: white;
+        list-style-type: none;
+    }
+    .itemBoxThree1-2-2{
+        background-color: white;
+        border-radius: 100%;
+        padding: 10px 15px;
+        background-image: url(/IMG/box/boxThree/servidor.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80% 80%;
+    }
+    .itemBoxThree2{
+        display: flex;
+        background-color: blue;
+        width: 25%;
+        height: 100%;        
+        border-radius: 5%;
+        margin-right: 2px;
+        margin-left: 2px;        
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .itemBoxThree2-1{
+        border: solid white;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 100%;
+        margin-bottom: 1rem;
+        background-image: url(/IMG/box/boxThree/maria.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxThree2-2{
+        display: flex;
+        height: 2rem;
+        width: 90%;
+        margin-bottom: 4px;
+        justify-content: space-between;
+    }
+    .itemBoxThree2-2-1{
+        padding: 10px 10px;
+        background-color: gray;
+        border-radius: 15%;
+    }
+    .itemBoxThree2-2-1 li{
+        height: 100%;
+        color: white;
+        list-style-type: none;
+    }
+    .itemBoxThree2-2-2{
+        background-color: none;
+        border-radius: 100%;
+        padding: 10px 15px;
+    }
+    .itemBoxThree3{ 
+        display: flex;
+        background-color: cadetblue;      
+        width: 25%;
+        height: 100%;
+        border-radius: 5%;
+        margin-right: 2px;
+        margin-left: 2px;        
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .itemBoxThree3-1{        
+        border: solid white;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 100%;
+        margin-bottom: 1rem;
+        background-image: url(/IMG/box/boxThree/alex.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxThree3-2{
+        display: flex;
+        height: 2rem;
+        width: 90%;
+        margin-bottom: 4px;
+        justify-content: space-between;
+    }
+    .itemBoxThree3-2-1{
+        padding: 10px 10px;
+        background-color: gray;
+        border-radius: 15%;
+    }
+    .itemBoxThree3-2-1 li{
+        height: 100%;
+        color: white;
+        list-style-type: none;
+    }
+    .itemBoxThree3-2-2{
+        background-color: none;
+        border-radius: 100%;
+        padding: 10px 15px;
+    }
+    .itemBoxThree4{
+        display: flex;     
+        background-color: darkorange;
+        width: 25%;
+        height: 100%;
+        border-radius: 5%;
+        margin-right: 2px;
+        margin-left: 2px;        
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .itemBoxThree4-1{
+        border: solid white;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 100%;
+        margin-bottom: 1rem;
+        background-image: url(/IMG/box/boxThree/alba.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxThree4-2{
+        display: flex;
+        height: 2rem;
+        width: 90%;
+        margin-bottom: 4px;
+        justify-content: space-between;
+    }
+    .itemBoxThree4-2-1{
+        padding: 10px 10px;
+        background-color: gray;
+        border-radius: 15%;
+    }
+    .itemBoxThree4-2-1 li{
+        height: 100%;
+        color: white;
+        list-style-type: none;
+    }
+    .itemBoxThree4-2-2{
+        background-color: none;
+        border-radius: 100%;
+        padding: 10px 15px;
+    }
+    .boxFour{
+        display: flex;
+        height: 33rem;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        column-gap: 4rem;
+        background-image: linear-gradient(black, #1C1C1C);
+    }
+    .itemBoxFour1{
+        width: 100%;
+        height: 1rem;
+        margin-top: 1rem;
+        color: white;        
+    }
+    .itemBoxFour2,
+    .itemBoxFour3,
+    .itemBoxFour4,
+    .itemBoxFour5,
+    .itemBoxFour6,
+    .itemBoxFour7,
+    .itemBoxFour8,
+    .itemBoxFour9,
+    .itemBoxFour10,
+    .itemBoxFour11,
+    .itemBoxFour12,
+    .itemBoxFour13,
+    .itemBoxFour14,
+    .itemBoxFour15,
+    .itemBoxFour16,
+    .itemBoxFour17,
+    .itemBoxFour18,
+    .itemBoxFour19,
+    .itemBoxFour20,
+    .itemBoxFour21,
+    .itemBoxFour22,
+    .itemBoxFour23,
+    .itemBoxFour24,
+    .itemBoxFour25,
+    .itemBoxFour26,
+    .itemBoxFour27,
+    .itemBoxFour28,
+    .itemBoxFour29{
+        display: flex;
+        width: 5rem;
+        height: 6rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 4px;
+    }
+    .itemBoxFour2-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/one.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour3-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/two.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour4-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/three.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour5-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/four.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour6-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/five.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour7-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/six.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour8-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/seven.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour9-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/eight.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour10-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/nine.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour11-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/ten.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour12-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/eleven.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour13-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twelve.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour14-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/thirteen.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour15-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/fourteen.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour16-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/fifteen.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour17-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/sixteen.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour18-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/seventeen.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour19-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/eighteen.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour20-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/nineteen.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour21-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour22-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-one.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour23-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-two.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour24-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-three.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour25-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-four.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour26-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-five.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour27-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-six.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour28-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-seven.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour29-1{
+        height: 3rem;
+        width: 3rem;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFour/twenty-eight.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .itemBoxFour2-2,
+    .itemBoxFour3-2,
+    .itemBoxFour4-2,
+    .itemBoxFour5-2,
+    .itemBoxFour6-2,
+    .itemBoxFour7-2,
+    .itemBoxFour8-2,
+    .itemBoxFour9-2,
+    .itemBoxFour10-2,
+    .itemBoxFour11-2,
+    .itemBoxFour12-2,
+    .itemBoxFour13-2,
+    .itemBoxFour14-2,
+    .itemBoxFour15-2,
+    .itemBoxFour16-2,
+    .itemBoxFour17-2,
+    .itemBoxFour18-2,
+    .itemBoxFour19-2,
+    .itemBoxFour20-2,
+    .itemBoxFour21-2,
+    .itemBoxFour22-2,
+    .itemBoxFour23-2,
+    .itemBoxFour24-2,
+    .itemBoxFour25-2,
+    .itemBoxFour26-2,
+    .itemBoxFour27-2,
+    .itemBoxFour28-2,
+    .itemBoxFour29-2{
+        min-width: 40%;
+        padding: 0.25rem 0.5rem;
+        margin-bottom: 4px;
+        text-align: center;
+        font-size: small;
+        color: white;
+    }
+    .boxFive{
+        display: flex;
+        height: 5rem;
+        width: 100%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        column-gap: 4rem;
+    }
+    .itemBoxFive1{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFive/waving-hand.png);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+    }
+    .itemBoxFive2{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFive/user.png);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+    }
+    .itemBoxFive3{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFive/microphone.png);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+    }
+    .itemBoxFive4{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFive/group.png);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+    }
+    .itemBoxFive5{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        background-image: url(/IMG/box/boxFive/power-off.png);
+        background-repeat: no-repeat;
+        background-size: 80% 80%;
+        background-position: center;
+    }
